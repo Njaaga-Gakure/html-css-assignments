@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.content--center {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Project CSS */
+
+.nav {
+  position: relative;
+  padding: 1.5rem;
+}
+.nav__logo {
+  display: inline;
+}
+.nav__links {
+  display: none;
+}
+.btn__container {
+  display: none;
+}
+.nav__toggle {
+  position: absolute;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.hero__info {
+  margin-top: 2rem;
+}
+.hero__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.hero__text {
+  color: var(--medium-gray);
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.hero__image img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  background-color: var(--almost-black);
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  color: var(--almost-white);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.hero__companies {
+  margin-top: 3rem;
+}
+.hero__companies img {
+  margin-left: 1rem;
+}
+@media (min-width: 1000px) {
+  .nav__links,
+  .btn__container {
+    display: inline;
+    margin-left: 5rem;
+    position: relative;
+    top: -0.65rem;
+  }
+  .nav__link {
+    display: inline;
+    /* border: 1px solid black; */
+    margin: 0 1rem 0;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .nav__toggle {
+    display: none;
+  }
+
+  .hero__info {
+    margin-top: 2rem;
+    width: 550px;
+    height: 600px;
+  }
+  .hero__image {
+    /* border: 1px solid magenta; */
+    float: right;
+    width: 400px;
+    height: 400px;
+  }
+  .login__btn {
+    background-color: transparent;
+    border: none;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .register__btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--almost-black);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+}
